@@ -40,7 +40,7 @@ jobs:
 
     # Convert to Deploy Source
     - name: Convert to Deploy Source
-      run: sfdx force:source:convert -r ./force-app -d ./toDeploy
+      run: sfdx force:source:convert -r force-app -x ./manifest/package.xml -d ./toDeploy
     
     # Run Validation of Deploy Source
     - name: Run Validation on Deploy Source
